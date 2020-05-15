@@ -59,11 +59,11 @@ async function addPeopleToDom(person) {
 
     return info;
 }
-async function fetchHomeWorld(queryString) {
+async function fetchHomeWorld(url) {
     const options = {
         method: 'GET'
     }
-    queryString.replace(http,https);
+    let queryString = url.replace(http,https);
     const response = await fetch(queryString, options);
     const json = await response.json();
     console.log(json.name);
