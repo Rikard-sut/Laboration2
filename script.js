@@ -63,6 +63,7 @@ async function fetchHomeWorld(queryString) {
     const options = {
         method: 'GET'
     }
+    queryString.replace(http,https);
     const response = await fetch(queryString, options);
     const json = await response.json();
     console.log(json.name);
