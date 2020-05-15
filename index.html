@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="se" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title> DOM manipulation using vanilla JavaScript </title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" charset="utf-8"></script>
+</head>
+
+<body>
+    <div class="star-wars-logo-container">
+        <div></div>
+        <img class="logo" src="http://imageshack.com/a/img922/3783/oyvsRd.png">
+        <button class="api-button"> Visa Favoriter AV/PÅ</button>
+    </div>
+    <header class="header">
+        <h1> Välkommen till kul med swapi </h1>
+        <p> här kan du hitta dina favoriter inom Star Wars <br>
+            Tryck på stjärnan för att lägga till i dina favoriter.</p>
+    </header>
+
+    <div class="api-list-container">
+        <div class="searchbox">
+            <input class="search-field" placeholder="tex. Luke Skywalker. eller del av namn ">
+            <button class="sendbutton">Hämta</button>
+        </div>
+
+    </div>
+    <div class="favourite-list-container dont-display">
+        <h3>Favoriter</h3>
+        <ul class="favourite-list"></ul>
+        <button class="remove-fav">Ta bort</button>
+        <button class="edit-fav">Ändra</button>
+        <button class="add-own">Lägg till</button>
+    </div>
+</body>
+
+</html>

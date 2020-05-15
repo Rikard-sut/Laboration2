@@ -1,0 +1,138 @@
+
+body{
+    background-image: url(https://cdn.pixabay.com/photo/2016/01/27/15/25/space-1164579_960_720.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center center;
+    background-attachment: fixed;
+    position: relative;
+    margin: 0px;
+}
+.logo{
+    display: block;
+    width: 40%;
+    max-height: 300px;
+    margin: auto;
+}
+.header h1{
+    font-family: 'Droid Sans', Arial, Helvetica, sans-serif;
+    text-shadow: 4px 4px 4px #aaa;
+    color: yellow;
+    text-align: center;
+}
+.header p{
+    text-align: center;
+    color: yellow;
+}
+.searchbox{
+    color: black;
+    display: grid;
+    grid-template-columns: auto 4em;
+}
+
+.api-list-container, .favourite-list-container{
+    width: 30%;
+    height: 80%;
+    margin: auto;
+    background-color: rgb(7, 3, 3, 0.5);
+    border: 2px solid yellow;
+    border-radius: 4px;
+    color: silver;
+}
+.favourite-list-container h3{
+    text-align: center;
+    color: yellow;
+    text-shadow: black;
+    border-bottom: 2px solid yellow;
+}
+
+.api-list-container > ul > li > button{
+    height: 20px;
+    width: 20px;
+    margin-left: 10px;
+    background: url(star.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border: 0px;
+    cursor: pointer;
+}
+.api-list-container > ul > li > button:hover{
+    box-shadow: 0 5px 15px rgb(255, 255, 255);
+}
+.star-wars-logo-container{
+    display: grid;
+    grid-template-columns: 5em auto 5em;
+    height: 15em;
+}
+.fav-button{
+    position: relative;
+    left: 10em;
+    top: 10em;
+    height: 4em;
+}
+.api-button{
+    position: relative;
+    right: 10em;
+    top: 10em;
+    height: 5em;
+    background-color: transparent;
+    color: yellow;
+    border: 4px solid yellow;
+    border-radius: 4px;
+    transition-duration: 0.5s;
+}
+.api-button:hover, .favourite-active{
+    background-color: yellow;
+    color: black;
+    box-shadow: 0 5px 15px rgb(255, 255, 255);
+    cursor: pointer;
+}
+
+.favourite-list-container > ul > li:hover{
+    cursor: pointer;
+}
+ul{
+    list-style-type: none;
+}
+li{
+    display: block;
+    margin: auto;
+    padding: 3px;
+}
+.api-list-container li:hover{
+    background-color: gray;
+    color: black;
+    cursor: default;
+}
+.display-list{
+    display: none;
+}
+.dont-display{
+    display: none;
+}
+.active{
+    background-color: yellow;
+    color: black;
+    border-radius: 4px;
+}
+.searchbox button:hover, .favourite-list-container button:hover{
+    background-color: yellow;
+    color: black;
+    cursor: pointer;
+}
+.searchbox button, .searchbox input{
+    background-color: transparent;
+    color: yellow;
+    padding: 2px;
+    border: 1px solid yellow;
+}
+.favourite-list-container button{
+    background-color: transparent;
+    color: yellow;
+    padding: 2px;
+    border: 1px solid yellow;
+}
+
+
+
+
